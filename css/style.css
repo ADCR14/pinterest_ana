@@ -1,21 +1,7 @@
-/* reset */
-body {
-	margin: 0;
-    padding: 0;
-}
-
 /* geral */
 html {
 	font-family: 'Open Sans', sans-serif;
 }
-
-/* reset */
-body {
-	margin: 0;
-}
-
-/*
-
 
 h1, h2, h3, h4, h5, p, span {
 	margin: 0;
@@ -23,12 +9,12 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 .container {
+	background-color:antiquewhite;
 	max-width: 1920px;
 	width: 100%;
 }
 
-/* header */
-header {
+header {    
 	position: relative;
 	top: 0;
 	height: auto;
@@ -44,57 +30,87 @@ nav {
 	z-index: 1;
 	background-color: #ffffff;
 	border-bottom: 1px solid #771111;
- }
+}
 
- nav:after {
- 	clear: both;
- 	content: "";
- 	display: block;
- }
+nav:after {
+	clear: both;
+	content: "";
+	display: block;
+}
 
- .nav-container {
- 	max-width: 1300px;
- 	position: fixed;
- 	margin-right: auto;
- 	margin-left: auto; 	
- }
+.nav-container {
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+	max-width: 1300px;
+}
 
- #logo {
- 	width: 180px;
- 	height: -80px;
- 	margin-top: 20px;
- }
+#logo {
+	width: 180px;
+	height: -80px;
+	margin-top: 20px;
+}
 
- .nav-container ul {
- 	float: right;
- 	height: 100px;
- 	line-height: 100px;
- 	margin: 0;
- }
+.nav-container ul {
+	display: flex;
+	justify-content: space-between;
+	padding-right: 15px;
+	height: 100px;
+	line-height: 100px;
+	margin: 0;
+}
 
- .nav-container li {
- 	list-style: none;
- 	float: left;
- 	margin: 0 15px;
- }
+.nav-container li {
+	display: flex;
+	justify-content: center;
+	list-style: none;
+	float: left;
+}
 
- .nav-container li a {
- 	text-decoration: none;
- 	color: #000000;
- 	transition: .5s;
- }
+.nav-container li a {
+	text-decoration: none;
+	color: #000000;
+	transition: .5s;
+}
 
- .nav-container li a:hover {
- 	color: #610f0f;
- }
+.nav-container li a:hover {
+	color: #610f0f;
+}
+
+.breadcrumbs {
+	width: 300px;
+}
 
 .pesquisar {
-    background-color: #FFF;
-    border-radius: 5px;
-    border-color: transparent;
-    padding: 10px 20px;
-    font-size: 18px;
-    margin: 0 10px;
+	border-radius: 5px;
+	width: 50%;
+	border-color: transparent;
+	padding: 20px;
+	font-size: 18px;
+}
+
+input {
+	background-color: #e4e4e4;
+	padding: 15px;
+	border-radius: 50px;
+	width: 100%;
+	height: 100%;
+	outline: none;
+	color: #333; /* Cor do texto */
+	border: 2px solid #333; /* Cor da borda */
+}
+
+input:hover {
+	background-color: #a0a0a0;
+}
+
+input:focus {
+	border-color: #555; /* Cor da borda ao focar */
+	outline: none; /* Remove o contorno padrão ao focar */
+}
+
+div {
+	align-items: center;
 }
 
 /* banner  
@@ -153,10 +169,7 @@ nav {
  
 */
 
-.pesquisar{
-    justify-content: center;
-    display: flex;
-    margin: 0 auto;
-    
-   
-}
+/* Exemplo Imagens */
+
+/* display: flex;
+   flex-wrap: wrap;
