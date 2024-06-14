@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 .container {
-	background-color: #000000;
+	background-color: #fcfcfc;
 	max-width: 1920px;
 	width: 100%;
 }
@@ -69,7 +69,7 @@ nav:after {
 
 .nav-container li a {
 	text-decoration: none;
-	color: #000000;
+	color: #fffdfd;
 	transition: .5s;
 }
 
