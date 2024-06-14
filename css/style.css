@@ -9,7 +9,7 @@ h1, h2, h3, h4, h5, p, span {
 }
 
 .container {
-	background-color:antiquewhite;
+	background-color: #000000;
 	max-width: 1920px;
 	width: 100%;
 }
@@ -116,24 +116,27 @@ div {
 .image-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-    gap: 10px;
-    max-width: 1000px;
+    gap: 2px;
+    max-width: 1920px;
     width: 100%;
-    padding: 10px;
+    padding: 70px;
     box-sizing: border-box;
+    justify-content: center; /* alinha no eixo horizontal */
+    align-items: center; /* alinha no eixo vertical */
+    margin: 0 auto; /* centraliza na página */
 }
 
 .image-item {
-    padding: 10px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    padding: 4px;
 }
 
 .image-item img {
-	border-radius: 30px;
+    border-radius: 30px;
     width: 100%;
     height: auto;
     display: block;
 }
+
 
 
 
